@@ -5,27 +5,27 @@ using namespace std;
 
 int main(){
 
-    int score = 0;
+    int x = 0;
     cout << "Value score: ";
-    cin >> score;
+    cin >> x;
 
-    if(score < 0 || score > 100){
+    if(x < 0 || x > 100){
         cout << "Invalid value!";
     }
 
-    else if (score < 40){
-        score = 40 - score;
-        cout << score << endl;
+    else if (x < 40){
+        x = 40 - x;
+        cout << x << endl;
     }
 
-    else if (score < 70){
-        score = 70 - score;
-        cout << score << endl;
+    else if (x < 70){
+        x = 70 - x;
+        cout << x << endl;
     }
 
-    else if (score < 90){
-        score = 90 - score;
-        cout << score << endl;
+    else if (x < 90){
+        x = 90 - x;
+        cout << x << endl;
     }
 
     else{

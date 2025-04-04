@@ -6,14 +6,9 @@ using namespace std;
 int main(){
 
     int x = 0;
-    cout << "Value score: ";
     cin >> x;
 
-    if(x < 0 || x > 100){
-        cout << "Invalid value!";
-    }
-
-    else if (x < 40){
+    if (x < 40){
         x = 40 - x;
         cout << x << endl;
     }
@@ -34,19 +29,6 @@ int main(){
 
 return 0;
 }
-
-
-// int pontuacao = 85;
-// if (pontuacao >= 90) {
-//     cout << "Rank: Expert" << endl;
-// } else if (pontuacao >= 70) {
-//     cout << "Rank: Avançado" << endl;
-// } else if (pontuacao >= 40) {
-//     cout << "Rank: Intermediário" << endl;
-// } else {
-//     cout << "Rank: Novato" << endl;
-// }
-
 
 
 
@@ -91,4 +73,4 @@ return 0;
 // X
 // X is an integer.
 
-// Minha lógica: como nós precisamos do score que o usuario inserir, vou armazenar esse score numa variavel chamada score que inicialmente tem o valor zero até que o usuario digite o valor do seu score, e fazer as contas a partir das condições que a questão implica
+// Minha lógica: na programação competitiva não precisamos de interação no prompt, basicamente vamos armazenar esse score numa variavel chamada X que inicialmente tem o valor zero até que receba um determinado valor que dentro das limitações da questão será testado na lógica das condicionais criadas por mim, e fazer as contas a partir das condições que a questão implica

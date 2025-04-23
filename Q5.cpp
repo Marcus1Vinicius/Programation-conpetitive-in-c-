@@ -11,11 +11,11 @@ int main() {
     for(int i = 0; i < n; i++){
         cin >> x[i];
     };
-    // o unordered_set serve para contarmos quantos números distintos nós temos no nosso vector e a
+    // o unordered_set serve para contarmos quantos números distintos nós temos no nosso vector 
+    // tenho que ver algo mais eficiente que unordered_set para contar os números distintos
     unordered_set<int> numeros_distintos(x.begin(), x.end());
-    cout << numeros_distintos.size() << std::endl;
+    cout << numeros_distintos.size();
 }
-
 
 
 

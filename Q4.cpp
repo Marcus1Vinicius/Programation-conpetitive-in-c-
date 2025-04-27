@@ -1,26 +1,19 @@
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int N;
+    string N;
     cin >> N;
+    for(int i = 0; i < 4 - N.size(); i++){
+        cout << "0";
+    }
 
-    if (N < 10) {
-        cout << "000" << N;
-    }
-    else if (N < 100) {
-        cout << "00" << N;
-    }
-    else if (N < 1000) {
-        cout << "0" << N;
-    }
-    else {
-        cout << N;
-    }
-    
-    return 0;
+    cout << N;
+
 }
+
+
+// minha lógica: vamos declarar a variavel n como um string, para que assim possamos contar os seus caracteres, com isso faremos um loop for para imprimir a quantidade de zeros baseado no tamanho da string recebida 
 
 // Declaração do Problema
 // Você recebe um número inteiro N entre 0 e 9999 (inclusive).

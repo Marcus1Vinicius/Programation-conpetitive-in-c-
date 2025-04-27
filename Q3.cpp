@@ -1,6 +1,4 @@
-#include <iostream>
-#include <cstdlib>
-#include <string>
+#include <bits/stdc++.h>
 using namespace std;
 
 int f (int x) {

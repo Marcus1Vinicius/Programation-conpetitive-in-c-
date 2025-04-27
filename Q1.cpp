@@ -1,11 +1,9 @@
-#include <iostream>
-#include <cstdlib>
-#include <string>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main(){
 
-    int x = 0;
+    int x;
     cin >> x;
 
     if (x < 40){

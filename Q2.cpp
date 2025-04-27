@@ -1,11 +1,9 @@
-#include <iostream>
-#include <cstdlib>
-#include <string>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main(){
 
-    int ReLU = 0;
+    int ReLU;
     cin >> ReLU;
 
     if (ReLU <= 0){

@@ -3,18 +3,23 @@ using namespace std;
 
 int main(){
     int N;
+    bool valores = true;
+
     for(int i = 0; i < 8; i++){
         cin >> N;
+        if (N != 0 && N != 1){
+            valores = false;
+        }
     }
 
-    if (N == 0 or N == 1){
-
-        cout << "S";
+    if(valores == false){
+        cout << "F";
     }
 
     else{
-        cout << "F";
+        cout << "S";
     }
+
 }
 
 // Enunciado do Problema

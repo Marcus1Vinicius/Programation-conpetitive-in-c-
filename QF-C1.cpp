@@ -2,11 +2,13 @@
 using namespace std;
 
 int main(){
-    int contador;
-    cin >> contador;
-    string N;
-    for(int i = 0; i < contador; i++){
-        cin >> N; cout << N;
+    int n;
+    cin >> n;
+    vector<string> N;
+    for(int i = 0; i < n; i++){
+        string s;
+        cin >> s;
+        N.push_back(s); 
     }
 
 }

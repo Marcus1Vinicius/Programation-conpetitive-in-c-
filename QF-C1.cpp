@@ -11,4 +11,5 @@ int main(){
         N.push_back(s); 
     }
 
+
 }

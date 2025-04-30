@@ -8,3 +8,9 @@
 qtd_horas_alocados = int(input("Digite a quantidade de horas já alocadas ao membro: "))
 horas_necessaria_tarefa = int(input("Digite o número de horas necessárias para a nova tarefa: "))
 limite_semanal_horas = int(input("Digite o limite semanal de horas do membro: "))
+formula = qtd_horas_alocados + horas_necessaria_tarefa
+
+if(formula < limite_semanal_horas):
+    print("O membro pode receber a nova tarefa.")
+else:
+    print("O membro não está disponível para a nova tarefa.")

@@ -8,18 +8,19 @@
 # Lotes dentro da umidade ideal: 12
 # Lotes acima da umidade ideal: 0
 
-soma_total_umidade = int(input("Digite a soma total da umidade de todos os lotes: "))
-total_lotes = int(input("Digite o número total de lotes: "))
-print(total_lotes)
-constante_eficiencia = float(input("Digite a constante de eficiência: "))
-umidade_ideal = int(input("Digite o valor da umidade ideal: "))
+soma_total_umidade = float(input(f"Digite a soma total da umidade de todos os lotes: "))
+total_lotes = int(input(f"Digite o número total de lotes: "))
+constante_eficiencia = float(input(f"Digite a constante de eficiência: "))
+umidade_ideal = float(input(f"Digite o valor da umidade ideal: "))
 media_umidade = (umidade_ideal**2) * constante_eficiencia
+contador_umidade_acima = 0
+contador_umidade_ideal = 0
 
-for i in total_lotes:
-    umidade_lote = int(input("Digite a umidade do lote ", i , ": "))
+for i in range(total_lotes):
+    umidade_lote = float(input(f"Digite a umidade do lote {i+1}: "))
     if(umidade_lote > umidade_ideal):
-        contador_umidade_acima = contador_umidade_acima + 1
+        contador_umidade_acima += 1
     elif(umidade_lote == umidade_ideal):
-        contador_umidade_ideal = contador_umidade_ideal + 1
-print("Média da umidade ao quadrado multiplicada pela constante de eficiência: ",media_umidade, "Lotes dentro da umidade ideal: ", contador_umidade_ideal, "Lotes acima da umidade ideal: ", contador_umidade_acima)
+        contador_umidade_ideal += 1
+print("Média da umidade ao quadrado multiplicada pela constante de eficiência:",media_umidade, "\nLotes dentro da umidade ideal: ", contador_umidade_ideal, "\nLotes acima da umidade ideal: ", contador_umidade_acima)
 

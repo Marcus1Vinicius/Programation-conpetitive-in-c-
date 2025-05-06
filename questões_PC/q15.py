@@ -15,7 +15,8 @@ while True:
         break
 
     elif qtd_materia_prima < -100 or qtd_materia_prima > 100:
-        continue
+        continue 
+    # o continue serve para pular os valores negativos
 
     contador += qtd_materia_prima
 

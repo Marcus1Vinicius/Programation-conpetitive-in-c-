@@ -22,10 +22,24 @@
 # Cada pessoa paga: R$ 36.85
 # 0 pessoa(s) deve(m) pagar 1 centavo extra.
 
-conta = float(input("Digite o valor da compra: "))
-qtd_pessoas = int(input("Digite quantas pessoas vão dividir a conta: "))
+conta = float(input("Valor total da conta: "))
+qtd_pessoas = int(input("Número de pessoas: "))
 conta_gorjeta = round((conta * 0.10) + conta, 2)
-conta_dividida = conta_gorjeta / qtd_pessoas
-divisao_arredondada = round(conta_dividida, 2)
+conta_dividida = round(conta_gorjeta / qtd_pessoas, 2)
 
-print(f"Total com gorjeta: {conta_gorjeta}\nCada pessoa paga: {divisao_arredondada}\n{int(divisao_arredondada % qtd_pessoas)} pessoa(s) deve(m) pagar 1 centavo extra")
+
+print(f"Total com gorjeta: {conta_gorjeta}\nCada pessoa paga: {conta_dividida}\n{int(conta_dividida % qtd_pessoas)} pessoa(s) deve(m) pagar 1 centavo extra")
+
+conta = float(input("Valor total da conta: R$ "))
+qtd_pessoas = int(input("Número de pessoas: "))
+
+conta_gorjeta = round(conta * 1.10, 2)
+
+total_centavos = int(conta_gorjeta * 100)
+valor_por_pessoa_centavos = total_centavos // qtd_pessoas
+resto = total_centavos % qtd_pessoas
+valor_por_pessoa = valor_por_pessoa_centavos / 100
+
+print(f"\nTotal com gorjeta: R$ {conta_gorjeta:.2f}")
+print(f"Cada pessoa paga: R$ {valor_por_pessoa:.2f}")
+print(f"{resto} pessoa(s) deve(m) pagar 1 centavo extra")

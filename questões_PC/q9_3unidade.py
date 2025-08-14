@@ -20,20 +20,12 @@ plano_pedestre_cliclistas = float(input("Digite a porcentagem de espaço urbano 
 
 plano_automoveis = float(input("Digite a estimativa percentual de redução no uso de automóveis: "))
 
-if plano_pedestre_cliclistas < 20:
-    status_pedestres_ciclistas = "Plano insatisfatório"
-
-if plano_pedestre_cliclistas > 50:
-    status_pedestres_ciclistas = "Plano otimo"
-
+if 20 <= plano_pedestre_cliclistas <= 50 or 10 <= plano_automoveis <= 30:
+    print("O plano de mobilidade é Razoável.")
+elif plano_pedestre_cliclistas > 50 or plano_automoveis > 30:
+    print("O plano de mobilidade é Ótimo.")
+elif plano_pedestre_cliclistas > 50 and plano_automoveis > 30:
+    (print("O plano de mobilidade é exemplar"))
 else:
-    status_pedestres_ciclistas = "Plano razoavel"
+    print("O plano de mobilidade é Insatisfatório") 
 
-if plano_automoveis < 10:
-    status_automoveis = "Insatisfatório"
-
-if plano_automoveis > 30:
-    status_automoveis = "Ótimo"
-
-else:
-    status_automoveis = "razoavel"

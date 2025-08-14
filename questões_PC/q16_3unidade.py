@@ -11,3 +11,19 @@ for i in range(qtd_viagens):
         print("Hora de carregar o caminhão!")
     
 print("Autonomia restante: ", autonomia, "km")
+
+autonomia = int(input("Digite a autonomia inicial do caminhão (em km): "))
+qtd_viagens = int(input("Digite o número de viagens: "))
+
+for i in range(qtd_viagens):
+    if autonomia <= 0:
+        break  
+    distancia_percorrida = int(input(f"Digite a distância percorrida na viagem {i+1} (em km): "))
+    autonomia -= distancia_percorrida
+
+    if autonomia <= 100 and autonomia > 0:
+        print("Hora de carregar o caminhão!")
+    elif autonomia <= 0:
+        print("Autonomia esgotada!")
+
+print(f"Autonomia restante: {max(autonomia, 0)} km")

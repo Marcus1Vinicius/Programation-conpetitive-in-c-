@@ -18,3 +18,24 @@ while True:
     
 print(f"O gênero mais vendido foi: Biografia (3 vendas)")
 
+lista_generos = []
+
+while True:
+    genero = input("Digite o gênero do livro vendido (digite 0 para encerrar): ").strip()
+    
+    if genero == "0":
+        break
+        
+    if genero: 
+        lista_generos.append(genero)
+
+if not lista_generos:
+    print("Nenhum gênero foi informado.")
+else:
+    contagem = {}
+    for genero in lista_generos:
+        contagem[genero] = contagem.get(genero, 0) + 1
+    
+    genero_mais_vendido = max(contagem.items(), key=lambda x: x[1])
+    
+    print(f"O gênero mais vendido foi: {genero_mais_vendido[0]} ({genero_mais_vendido[1]} vendas)")

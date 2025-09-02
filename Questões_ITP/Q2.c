@@ -9,15 +9,15 @@
 
 int main() {
     
-    float grau;
+    float graus_Celsios;
 
     printf("Digite a temperatura em graus Celsios: ");
-    scanf("%f", &grau);
+    scanf("%f", &graus_Celsios);
 
-    float formula1 = (grau * (9.0/5.0)) + 32;
-    float formula2 = grau + 273.15;
+    float formula_Fahrenheit = (graus_Celsios * (9.0/5.0)) + 32;
+    float formula2_Kelvin = graus_Celsios + 273.15;
 
-    printf("Sua temperatura em Fahrenheit é: %.1f\n. Em Kelvin é: %.1f\n", formula1, formula2);
+    printf("Sua temperatura em Fahrenheit é: %.1f\n. Em Kelvin é: %.1f\n", formula_Fahrenheit, formula2_Kelvin);
 
     return 0;
 }

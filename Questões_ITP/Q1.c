@@ -9,9 +9,9 @@ int main() {
     printf("Digite sua altura: ");
     scanf("%f", &altura);
 
-    float formula = peso / (altura * altura);
+    float IMC_Formula = peso / (altura * altura);
 
-    printf("Seu IMC é: %.2f\n", formula);
+    printf("Seu IMC é: %.2f\n", IMC_Formula);
 
     return 0;
 }

@@ -9,9 +9,7 @@ int main(){
     if (ReLU <= 0){
 
         cout << 0 << endl;
-    }
-
-    else{
+    } else{
         cout << ReLU;
     }
 
